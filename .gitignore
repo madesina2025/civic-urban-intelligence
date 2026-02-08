@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Airflow
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+webserver_config.py
+
+# Data files (never commit raw data)
+*.csv
+*.json
+*.parquet
+*.zip
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars
+*.tfvars
+*.lock.hcl
+
+# Logs
+*.log
+
