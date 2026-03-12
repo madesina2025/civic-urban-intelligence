@@ -1,1 +1,29 @@
-# Astro Runtime includes the following pre-installed providers packages: https://www.astronomer.io/docs/astro/runtime-image-architecture#provider-packages
+#(venv) sh-3.2$ pip list
+#Package            Version
+#------------------ -----------
+azure-core         1.37.0
+azure-storage-blob 12.27.1
+certifi            2025.11.12
+cffi               2.0.0
+charset-normalizer 3.4.4
+cramjam            2.11.0
+cryptography       46.0.3
+fastparquet        2024.11.0
+fsspec             2025.10.0
+idna               3.11
+isodate            0.7.2
+numpy              2.0.2
+packaging          25.0
+pandas             2.3.3
+pip                21.2.4
+pyarrow            21.0.0
+pycparser          2.23
+python-dateutil    2.9.0.post0
+python-dotenv      1.2.1
+pytz               2025.2
+requests           2.32.5
+setuptools         58.0.4
+six                1.17.0
+typing_extensions  4.15.0
+tzdata             2025.3
+urllib3            2.6.2
