@@ -3,7 +3,7 @@
 **Urban Cities Live**  
 **Intelligence and Reporting**
 
----
+```table
 
 # Table of Contents
 
@@ -20,7 +20,7 @@
 11. [Outputs](#11-outputs)  
 12. [Roadmap & Enhancements](#12-roadmap--enhancements)  
 
----
+```
 
 ## 1. Project Overview
 
@@ -34,7 +34,7 @@ This project is designed to help stakeholders monitor city-service performance u
 
 ```text
 NYC 311 API → Apache Airflow → Azure Blob Storage → Azure Data Factory → Azure PostgreSQL → Power BI
-
+```
 
 Strong data-quality checks, lineage tracking, and clearly defined KPIs ensure that insights are accurate, auditable, and trusted.
 
@@ -110,6 +110,7 @@ The pipeline follows a modern **API → Lake → Warehouse → Analytics** archi
 ```text
 API → Airflow → Azure Blob Storage → Azure Data Factory → Azure PostgreSQL → Power BI
 
+```
 ### Technology Stack
 
 - **Python** – API integration, schema handling, validation, and transformations  
@@ -159,6 +160,7 @@ The extracted raw data is stored in the **raw landing zone in Azure Blob Storage
 ```text
 storage/blob/raw2/
 
+```
 ### Step 3: Transform and Standardise Data
 
 The raw dataset is **cleaned and standardised** before loading into downstream services.
@@ -177,6 +179,7 @@ The clean dataset is then stored in the **clean landing zone**.
 ```text
 storage/blob/clean2/
 
+```
 ### Step 4: Load Curated Data with Azure Data Factory
 
 Azure Data Factory moves **clean data from Blob Storage into Azure PostgreSQL**.
@@ -266,6 +269,8 @@ urban-intelligence/
     └── images/
         └── architecture.png
 
+```
+
 ### Structure Explanation
 
 - **api/** – contains Python scripts for extraction, transformation, and loading  
@@ -344,6 +349,8 @@ POSTGRES_DB=
 POSTGRES_USER=
 POSTGRES_PASSWORD=
 
+'''
+
 ### Provision Azure Infrastructure
 
 - Navigate to the Terraform directory:
@@ -351,20 +358,30 @@ POSTGRES_PASSWORD=
 ```bash
 cd terraform
 
+
+=======
+```
+
 - Initialize terraform
 
 ```bash
 terraform init
 
+```
 - Preview infrastructure changes:
 
 ```bash
 terraform plan
 
+
+=======
+```
+
 - Apply the infrastructure:
 
 ```bash
 terraform apply
+```
 
 - This will provision:
 
@@ -383,15 +400,18 @@ python api/api_connect.py
 python api/extract.py
 python api/load_to_data_lake.py
 
+```
 - Run Data Transformation
 
 ```bash
 python api/transform_data.py
 python api/load_clean_data_to_data_lake.py
 
+```
 Trigger Airflow DAG
 
 ```bash
 civicpulse_dag
 
+```
 - **Airflow orchestrates the pipeline execution**.
