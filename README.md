@@ -6,7 +6,7 @@
 **Urban Cities Live**  
 **Intelligence and Reporting**
 
-
+---
 # Table of Contents
 
 1. [Project Overview](#1-project-overview)  
@@ -22,7 +22,7 @@
 11. [Outputs](#11-outputs)  
 12. [Roadmap & Enhancements](#12-roadmap--enhancements)
   
-```
+---
 
 ## 1. Project Overview
 
