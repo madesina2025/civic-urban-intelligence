@@ -1,7 +1,4 @@
-```markdown
-
 # Urban Intelligence (CivicPulse) – City Service Analytics Pipeline
-
 
 **Urban Cities Live**  
 **Intelligence and Reporting**
