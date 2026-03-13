@@ -122,7 +122,7 @@ API → Airflow → Azure Blob Storage → Azure Data Factory → Azure PostgreS
 
 ## 5. Architecture Diagram
 
-![CivicPulse Architecture Diagram](docs/images/architecture.png)
+![CivicPulse Architecture Diagram](./assets/architecture.png)
 
 ## 6. Data Pipeline Logic
 
