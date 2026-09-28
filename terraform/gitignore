@@ -1,0 +1,4 @@
+.terraform
+credentials.txt
+
+terraform.tfvars

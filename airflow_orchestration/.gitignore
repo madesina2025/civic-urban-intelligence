@@ -1,0 +1,29 @@
+.git
+.env
+.DS_Store
+airflow_settings.yaml
+__pycache__/
+astro
+.venv
+airflow-webserver.pid
+webserver_config.py
+airflow.cfg
+airflow.db
+*.pyc
+venv/
+
+# Data files (avoid huge csv)
+*.csv
+*.parquet
+*.json
+*.zip
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+terraform.tfvars
+credentials.txt
+
+# Mac
+.DS_Store
