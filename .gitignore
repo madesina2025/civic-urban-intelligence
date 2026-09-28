@@ -1,0 +1,49 @@
+# ============================================
+# Secrets and environment variables
+# ============================================
+.env
+.env.*
+credentials.txt
+*.tfvars
+
+# ============================================
+# Terraform generated/local files
+# ============================================
+.terraform/
+*.tfstate
+*.tfstate.*
+tfplan
+tfplan*
+.terraform.lock.hcl
+
+# ============================================
+# Python virtual environments
+# ============================================
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ============================================
+# Airflow local/runtime files
+# ============================================
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+logs/
+
+# ============================================
+# OS / editor files
+# ============================================
+.DS_Store
+._*
+.vscode/
+
+# ============================================
+# Local/large datasets
+# ============================================
+*.csv
