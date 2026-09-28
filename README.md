@@ -39,7 +39,7 @@ The aim is not simply to display 311 records, but to convert them into operation
 
 ## Architecture
 
-![CivicPulse311 architecture](venv/doc/images/architecture.png)
+![CivicPulse311 architecture](assets/architecture.png)
 
 ### Main Components
 
